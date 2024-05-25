@@ -1,0 +1,10 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url(../../res/main/main_backgr.png);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}

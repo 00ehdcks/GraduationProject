@@ -1,0 +1,190 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #cfd0d6;
+}
+
+.wrapper {
+  position: relative;
+  width: 370px;
+  height: 350px;
+  background-color: white;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: height 0.2s ease;
+  overflow: hidden;
+}
+
+.wrapper .form-box {
+  width: 100%;
+  padding: 40px;
+}
+
+.form-box h2 {
+  text-align: center;
+  font-size: 35px;
+  color: #005fa8;
+}
+
+.form-box h3 {
+  text-align: center;
+  font-size: 22px;
+  color: black;
+  font-weight: 600;
+  margin: 20px 0px 20px 0px;
+}
+
+.input_box {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  border-bottom: 2px solid #162938;
+  margin: 25px 0;
+}
+
+.input_box label {
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  transform: translateY(-50%);
+  color: #162938;
+  font-weight: 500;
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+.input_box input:focus ~ label,
+.input_box input:valid ~ label {
+  top: -5px;
+}
+
+.input_box input {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 0 35px 0 5px;
+}
+
+.input_box span {
+  position: absolute;
+  right: 8px;
+  color: #005fa8;
+  font-size: 22px;
+  line-height: 57px;
+  cursor: pointer;
+}
+.password > .fa-eye-slash {
+  position: absolute;
+  right: 7px;
+  color: #005fa8;
+  font-size: 22px;
+  line-height: 57px;
+}
+
+.warn {
+  display: none;
+  margin-bottom: 15px;
+}
+
+.wran > span {
+  color: #ffcf33;
+}
+
+.wrapper button {
+  width: 100%;
+  height: 45px;
+  background: #005fa8;
+  border: none;
+  outline: none;
+  border-radius: 6px;
+  cursor: pointer;
+  color: white;
+  font-weight: 500;
+  margin-bottom: 15px;
+  transition: 0.5s ease;
+}
+
+.wrapper button:hover {
+  background: #1c4869;
+}
+
+.wrapper .goto_login {
+  width: 100%;
+  height: 45px;
+  background: #005fa8;
+  border: none;
+  outline: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-bottom: 15px;
+  transition: 0.5s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper .goto_login > .goto_login_btn {
+  color: white;
+  font-weight: 500;
+  text-align: center;
+}
+
+.goto_login:hover {
+  background-color: #1c4869;
+}
+
+.wrapper a {
+  color: #005fa8;
+  font-weight: bold;
+}
+.wrapper a:visited {
+  color: #005fa8;
+}
+
+.password > .fa-eye-slash {
+  position: absolute;
+  right: 12px;
+  color: #005fa8;
+  font-size: 22px;
+  line-height: 57px;
+}
+.input_box > .nsee_btn_1,
+.input_box > .nsee_btn_2 {
+  display: none;
+}
+/* js */
+
+.wrapper.active {
+  height: 280px;
+}
+
+.wrapper .form-box.change-passwd {
+  transition: transform 0.18s ease;
+  transform: translateX(0);
+}
+
+.wrapper .form-box.change-success {
+  position: absolute;
+  transition: none;
+  transform: translateX(400px);
+}
+
+.wrapper.active .form-box.change-passwd {
+  transition: none;
+  transform: translateX(-400px);
+}
+
+.wrapper.active .form-box.change-success {
+  transition: transform 0.18s ease;
+  transform: translateX(0);
+}

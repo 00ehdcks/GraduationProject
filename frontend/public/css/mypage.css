@@ -1,0 +1,207 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #cfd0d6;
+}
+
+.wrapper {
+  position: relative;
+  width: 20%;
+  height: 750px;
+  background-color: white;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: height 0.2s ease;
+  margin-top: 5%;
+}
+
+.wrapper .box {
+  display: flex;
+  justify-content: left;
+  width: 100%;
+  height: 100%;
+}
+
+.wrapper .pagename {
+  width: 100%;
+  text-align: left;
+  margin: 15px 0 15px 15%;
+  font-size: 26px;
+}
+
+.wrapper2 button {
+  width: 12%;
+  height: 30px;
+  background: #005fa8;
+  border: none;
+  outline: none;
+  border-radius: 6px;
+  cursor: pointer;
+  color: white;
+  font-weight: 500;
+  transition: 0.5s ease;
+}
+
+.wrapper2 button:hover {
+  background: #1c4869;
+}
+
+.pagename hr {
+  margin: 5% 15% 0 0;
+}
+
+.profile_area {
+  position: relative;
+  display: inline-block;
+  margin: 20px 0 10px 0;
+}
+
+.profile_area .profile_img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 5px solid black;
+}
+
+.profile_area .edit_btn {
+  position: absolute;
+  bottom: 8px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  font-size: 25px;
+  background-color: #ffffff;
+  border: 3px solid rgb(0, 0, 0);
+  border-radius: 50%;
+  color: #000000;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nick_area {
+  width: 100%;
+  text-align: center;
+}
+
+.nick_area hr {
+  margin: 15px 5% 30px 5%;
+}
+
+.wrapper .list {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: top;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.list li {
+  position: relative;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+.list li::before {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #a7a7a7;
+  transition: 0.3s;
+}
+.list li:hover::before {
+  width: 100%;
+}
+
+.list .profile {
+  color: #005fa8;
+}
+
+.list hr {
+  margin: 0 0 15% 30%;
+}
+
+.wrapper2 {
+  position: relative;
+  width: 50%;
+  height: 420px;
+  background-color: white;
+  /* border: 2px solid rgba(255, 255, 255, 0.5); */
+  border-radius: 20px;
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: height 0.2s ease;
+  margin: 5% 0 0 2%;
+}
+
+.wrapper2 .title_text {
+  width: 100%;
+  text-align: left;
+  padding: 10px 0 10px 3%;
+  color: rgb(255, 255, 255);
+  border-radius: 20px 20px 0 0;
+  background-image: linear-gradient(98deg, #428eff, #49c6dd);
+}
+
+.partition {
+  width: 100%;
+  height: 93%;
+  border-radius: 20px;
+  color: black;
+  margin: 10px 0 10px 75px;
+}
+
+.profile-box i {
+  position: absolute;
+  left: 12px;
+  bottom: 26px;
+  color: #005fa8;
+  font-size: 20px;
+}
+
+.profile-box hr {
+  margin: 0 80px 0 0;
+}
+
+.box-content {
+  display: flex;
+  padding: 30px 0 20px 35px;
+  position: relative;
+}
+.box-content h3 {
+  width: 70px;
+}
+
+.content {
+  width: 65%;
+  margin: 2px 30px 0 30px;
+  font-size: 18px;
+}
+
+.post-list-box {
+  display: none;
+}
+
+.comment-list-box {
+  display: none;
+}
+
+.wrapper2.active {
+  height: 750px;
+}
